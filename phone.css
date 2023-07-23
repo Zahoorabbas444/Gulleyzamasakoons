@@ -1,0 +1,241 @@
+@media screen and (min-width: 600px) and (max-width: 1350px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    /* Navigation */
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar ul {
+        margin-bottom: 14px;
+    }
+
+    #navbar ul li a {
+        font-size: 1.5rem;
+        padding: 6px 16px;
+    }
+
+    /* Home section  */
+    #home {
+        height: 700px;
+        padding: 6px 100px;
+    }
+
+    .gulley {
+        margin: 6px;
+    }
+
+    .gulley img {
+        height: 200px;
+        width: 400px;
+    }
+
+    #home p {
+        font-size: 1.3rem;
+        padding: 5px;
+    }
+
+    /* About section  */
+    #about-container h1 {
+        animation: hassan 6s ease-in-out infinite;
+        margin: 7px auto;
+        border-radius: 20px;
+        padding: 12px;
+    }
+
+    @keyframes hassan {
+        from {
+            width: 0px;
+        }
+
+        to {
+            width: 500px;
+        }
+    }
+
+    #about-container p {
+        font-size: 1.2rem;
+        color: black;
+        padding: 5px;
+        text-align: center;
+    }
+
+    #about {
+        margin: 18px 5px;
+        flex-direction: column;
+    }
+
+    /* Media Section  */
+    #media {
+        flex-wrap: wrap;
+    }
+
+    .media-item {
+        padding: 20px 30px;
+    }
+
+    #media img {
+        height: 80px;
+    }
+
+    /* Contact Section  */
+
+    /* footer  */
+    footer {
+        padding: 8px 12px;
+        font-size: 1.5rem;
+    }
+
+    /* Utility class  */
+    .h-primary {
+        font-size: 2.2rem;
+    }
+
+    .btn {
+        width: 160px;
+        padding: 22px;
+        margin: 10px auto;
+        font-size: 1rem;
+    }
+
+    .btn:hover {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    /* Navigation */
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar ul {
+        margin-bottom: 12px;
+    }
+
+    #navbar ul li a {
+        font-size: 0.9rem;
+        padding: 6px 7px;
+    }
+
+    /* Home section  */
+    #home {
+        height: 700px;
+        padding: 6px 70px;
+    }
+
+    .gulley {
+        margin: 6px;
+    }
+
+    .gulley img {
+        height: 100px;
+        width: 300px;
+    }
+
+    #home p {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    /* About section  */
+    #about-container h1 {
+        animation: hassan 6s ease-in-out infinite;
+        margin: 7px auto;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+
+    @keyframes hassan {
+        from {
+            width: 0px;
+        }
+
+        to {
+            width: 300px;
+        }
+    }
+
+    #about-container p {
+        font-size: 1.2rem;
+        color: black;
+        padding: 5px;
+        text-align: center;
+    }
+
+    #about {
+        margin: 14px 5px;
+        flex-direction: column;
+    }
+
+    #about .box img {
+        height: 150px;
+        width: 200px;
+    }
+
+    /* Media Section  */
+    #media {
+        flex-wrap: wrap;
+    }
+
+    .media-item {
+        padding: 14px 25px;
+    }
+
+    #media img {
+        height: 50px;
+    }
+
+    /* Contact Section  */
+    #contact form {
+        width: 30%;
+    }
+
+    #contact input, #contact textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border-radius: 14px;
+        font-size: 0.8rem;
+        margin: 1rem 0rem;
+    }
+
+    /* footer  */
+    footer {
+        padding: 7px 10px;
+        font-size: 1.3rem;
+    }
+
+    /* Utility class  */
+    .h-primary {
+        font-size: 2rem;
+    }
+
+    .btn {
+        width: 110px;
+        padding: 16px;
+        margin: 10px auto;
+        font-size: .9rem;
+    }
+
+    .btn:hover {
+        font-size: 1rem;
+    }
+}

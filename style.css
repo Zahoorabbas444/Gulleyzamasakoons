@@ -1,0 +1,314 @@
+/* CSS Reset  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Bitter', serif;
+    font-family: 'Fira Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar logo and img  */
+.logo {
+    margin: 10px 34px;
+}
+
+.logo img {
+    margin: 6px 6rem;
+    height: 150px;
+    width: 150px;
+}
+
+/* Navigation Bar List Style  */
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 6px 50px;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+
+}
+
+/* Home Section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    height: 720px;
+}
+
+#home::before {
+    content: "";
+    background: url('love1.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+/* Home image  */
+.gulley {
+    margin: 10px;
+}
+
+.gulley img {
+    height: 400px;
+    width: 700px;
+    opacity: 0.9;
+}
+
+#home h1 {
+    text-align: center;
+    color: white;
+    background-color: black;
+
+}
+
+
+
+#home p {
+    font-size: 1.5rem;
+    color: white;
+    padding: 7px;
+    text-align: center;
+}
+
+/* About Section  */
+#about-container {
+    margin: 2px 0px;
+
+}
+
+#about {
+    margin: 20px 5px;
+    display: flex;
+
+}
+
+#about .box {
+    border: 2px solid brown;
+    padding: 60px 20px;
+    margin: 4px 30px;
+    border-radius: 40px;
+    background-color: #f0e9e9;
+}
+
+#about .box img {
+    height: 300px;
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+
+#about .box h1 {
+    margin: 6px;
+    color: black;
+}
+
+#about .box p {
+    font-size: 1.5rem;
+    color: black;
+    padding: 7px;
+    text-align: center;
+}
+
+#about-container p {
+    font-size: 1.5rem;
+    color: black;
+    padding: 7px;
+    text-align: center;
+}
+
+#about-container h1 {
+    background-color: yellow;
+    animation: hassan 6s ease-in-out infinite;
+    margin: 14px auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+@keyframes hassan {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 600px;
+    }
+}
+
+
+/* Media Section  */
+#media-section {
+    height: 460px;
+    position: relative;
+}
+
+#media-section::before {
+    content: "";
+    background: url('bg-media.jpg') no-repeat center center/cover;
+    height: 460px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-item {
+    padding: 34px 70px;
+}
+
+#media img {
+    height: 150px;
+}
+
+#media-section h1 {
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+
+/* Contact Section  */
+#contact-container {
+    position: relative;
+}
+
+#contact-container::before {
+    content: "";
+    background: url('pics.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-container h1 {
+    padding: 50px;
+    color: white;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 14px;
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+}
+
+#contact form {
+    width: 40%
+}
+
+#contact form label {
+    font-size: 2rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Footer  */
+footer {
+    background-color: #646464;
+    color: white;
+    padding: 10px 14px;
+    font-size: 2rem;
+}
+
+footer span {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Utility Class */
+.h-primary {
+    font-size: 2.8rem;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn {
+    width: 220px;
+    padding: 28px;
+    margin: 10px;
+    font-size: 1.4rem;
+    margin-left: 18rem;
+    margin-top: 2rem;
+    border: 1px solid brown;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+}
